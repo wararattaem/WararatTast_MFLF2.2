@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="ATM_Test.js"></script>
+ 
+</head>
+<body>
+
+
+        <h3 style="text-align:center; margin-top: 30px; margin-bottom:30px;">MFLF Test past2.2(ATM)</h3>
+        
+        <div class="container" style=" margin-bottom:100px; width:500px;">
+            <h4 style="text-align:center;">คุณมีจำนวนเงินทั้งหมด 10000 บาท</h4>
+            <h4 style="text-align:center;" >กรุณากรอกจำนวนเงิน</h4>
+
+                <input type="text" class="form-control" id="balance">
+                <button class="btn btn-success" type="submit" id="submit" style="margin-top:20px; width:130px;">ตกลง</button>
+            
+            <h5 style="text-align:center;">______________________________________________</h5>
+            <h5 style="text-align:center;">แสดงรายการ</h5>      
+            <div id="display" style="text-align:center;"></div>
+             
+               
+           
+        </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCyKJVTOCmYOz35REycoDSgRptV2NZMg5A",
+            authDomain: "wararattestmflf.firebaseapp.com",
+            databaseURL: "https://wararattestmflf.firebaseio.com",
+            projectId: "wararattestmflf",
+            storageBucket: "wararattestmflf.appspot.com",
+            messagingSenderId: "146189825525"
+        };
+        firebase.initializeApp(config);
+
+
+    </script>
+
+
+
+</body>
+</html>
